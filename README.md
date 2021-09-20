@@ -9,9 +9,15 @@ There is also sensitive data hidden using the dotenv package
 
 ## Usage
 
-Seed the database by using **npm seed**
+1. Navigate to the Folder
 
-Next run the server by using **npm start**
+2. Run mysql and use: **source db/schema.sql**. Exit mysql
+
+3. Seed the database by using **npm seed**
+
+4. Run the server by using **npm start**
+
+5. Test the GET/POST/PULL/DELETE APIs by inputting the correct URL query in Insomnia
 
 ## Screenshots:
 
