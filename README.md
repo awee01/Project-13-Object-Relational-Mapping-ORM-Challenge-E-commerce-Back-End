@@ -9,8 +9,9 @@ There is also sensitive data hidden using the dotenv package
 
 ## Usage
 
-Seed the database by using npm seed
-Next run the server by using npm start
+Seed the database by using **npm seed**
+
+Next run the server by using **npm start**
 
 ## Screenshots:
 
