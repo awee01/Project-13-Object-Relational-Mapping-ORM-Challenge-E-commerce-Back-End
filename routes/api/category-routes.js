@@ -1,9 +1,9 @@
-const router = require('express').Router();
-const { Category, Product } = require('../../models');
+const router = require("express").Router();
+const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   // find all categories
   // be sure to include its associated Products
 
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 });
 
-router.get('/:id', (req, res) => {
+router.get("/:id", (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
 
@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
 
 });
 
-router.post('/', (req, res) => {
+router.post("/", (req, res) => {
   // create a new category
 
   router.post("/", (req, res) => {
@@ -89,7 +89,7 @@ router.delete("/:id", (req, res) => {
 
     .then((dbCategoryData) => {
     if (!dbCategoryData) {
-      res.status(404).json({ message: "No Category found with this id" });
+      res.status(404).json({ message: "Cannot identify a category with this id" });
       return;
     }
       res.json(dbCategoryData);
