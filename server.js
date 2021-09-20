@@ -17,7 +17,13 @@ app.use(routes);
 // Above code was causing error so I removed it, redundant to application use.
 // force: False seems to work though
 
+sequelize.sync({force: false}).then(() => { 
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
+
+
+});
+
 
