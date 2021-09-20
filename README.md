@@ -15,4 +15,7 @@ Next run the server by using **npm start**
 
 ## Screenshots:
 
+![image](https://user-images.githubusercontent.com/85651950/133952462-9f581402-4b8d-47c1-982f-d8b35a55ddab.png)
+
+
 ## Video URL:
