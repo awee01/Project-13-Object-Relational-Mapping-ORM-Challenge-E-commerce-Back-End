@@ -24,7 +24,8 @@ router.get("/", (req, res) => {
 
     .then(dbProductData => res.json(dbProductData))
     .catch(err => {
-      console.log(err);
+      console.log(dbProductData);
+      console.log(error);
       res.status(500).json(err);
     })
 
