@@ -13,6 +13,10 @@ Seed the database by using **npm seed**
 
 Next run the server by using **npm start**
 
+See the video to see the application in action. The video showcases using the GET, POST, PUT, DEL commands to show, add, update, delete items in the three databases
+
 ## Screenshots:
 
 ## Video URL:
+
+
