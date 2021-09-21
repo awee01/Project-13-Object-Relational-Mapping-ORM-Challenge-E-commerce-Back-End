@@ -168,6 +168,7 @@ router.delete("/:id", (req, res) => {
         res.status(404).json({
           message: "Cannot identify a product with this id"
         });
+        
         return;
       }
       res.json(dbProductData);
