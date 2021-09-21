@@ -92,8 +92,7 @@ Product.create(req.body)
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
-            product_id: product.id,
-            tag_id,
+            product_id: product.id, tag_id,
           };
         });
         return ProductTag.bulkCreate(productTagIdArr);
