@@ -11,15 +11,13 @@ router.get("/", (req, res) => {
     attributes: ["id","tag_name"],
     
     include:[{model: Product}] 
-
   })
-
+  
   .then(dbTagData => res.json(dbTagData))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
   });
-
 });
 
 router.get("/:id", (req, res) => {
@@ -44,8 +42,8 @@ router.get("/:id", (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
+  
 });
-
 
 router.post("/", (req, res) => {
   // create a new tag
